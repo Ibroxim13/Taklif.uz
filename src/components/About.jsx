@@ -45,8 +45,8 @@ export default function About() {
               textAlign: 'center', color: 'white',
               boxShadow: '0 20px 60px rgba(201,84,124,0.25)'
             }}>
-              <div style={{marginBottom: 16}} className='flex items-center justify-center'>
-                <img src={me} alt="me" className='w-24 h-24 object-contain'/>
+              <div style={{ marginBottom: 16 }} className='flex items-center justify-center'>
+                <img src={me} alt="me" className='w-24 h-24 object-contain' />
               </div>
               <h3 style={{
                 fontFamily: 'Playfair Display, serif', fontWeight: 700,
@@ -66,8 +66,8 @@ export default function About() {
             </div>
 
             {/* Float: stat */}
-            <motion.div
-              animate={{ y: [0, -8, 0] }} transition={{ duration: 4, repeat: Infinity }}
+            <div
+
               style={{
                 position: 'absolute', bottom: -20, right: 0,
                 background: 'white', borderRadius: 16, padding: '14px 20px',
@@ -79,11 +79,10 @@ export default function About() {
                 fontFamily: 'Playfair Display, serif', fontWeight: 700, fontSize: 28
               }}>100+</div>
               <div style={{ fontSize: 12, color: 'var(--gray-light)', marginTop: 2 }}>Baxtli juftlik</div>
-            </motion.div>
+            </div>
 
             {/* Float: badge */}
-            <motion.div
-              animate={{ y: [0, 8, 0] }} transition={{ duration: 3.5, repeat: Infinity, delay: 0.6 }}
+            <div
               style={{
                 position: 'absolute', top: -16, left: 0,
                 background: 'white', borderRadius: 16, padding: '10px 16px',
@@ -97,7 +96,7 @@ export default function About() {
                 <div style={{ fontSize: 12, fontWeight: 600, color: 'var(--gold)' }}>Top Dizayner</div>
                 <div style={{ fontSize: 11, color: 'var(--gray-light)' }}>2024 yil</div>
               </div>
-            </motion.div>
+            </div>
           </motion.div>
 
           {/* Text content */}
