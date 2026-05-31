@@ -85,7 +85,7 @@ export default function About() {
             <motion.div
             animate={{ y: [0, 8, 0] }} transition={{ duration: 3.5, repeat: Infinity, delay: 0.6 }}
               style={{
-                position: 'absolute', top: -16, left: 0,
+                position: 'absolute', top: -16, left: -10,
                 background: 'white', borderRadius: 16, padding: '10px 16px',
                 boxShadow: '0 8px 24px rgba(201,168,76,0.15)',
                 border: '1px solid rgba(201,168,76,0.2)',
