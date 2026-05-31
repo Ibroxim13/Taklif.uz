@@ -32,8 +32,8 @@ export default function About() {
 
           {/* Visual card */}
           <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            animate={inView ? { opacity: 1, x: 0 } : {}}
+            initial={{ opacity: 0, y: 20 }}
+            animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.65 }}
             style={{ position: 'relative', paddingBottom: 30, paddingRight: 16 }}
           >
@@ -83,7 +83,7 @@ export default function About() {
 
             {/* Float: badge */}
             <motion.div
-            animate={{ y: [0, 8, 0] }} transition={{ duration: 3.5, repeat: Infinity, delay: 0.6 }}
+              animate={{ y: [0, 8, 0] }} transition={{ duration: 3.5, repeat: Infinity, delay: 0.6 }}
               style={{
                 position: 'absolute', top: -16, left: -10,
                 background: 'white', borderRadius: 16, padding: '10px 16px',
@@ -102,8 +102,8 @@ export default function About() {
 
           {/* Text content */}
           <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            animate={inView ? { opacity: 1, x: 0 } : {}}
+            initial={{ opacity: 0, y: 20 }}
+            animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.65, delay: 0.15 }}
           >
             <span className="section-tag">Biz haqimizda</span>
