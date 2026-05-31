@@ -46,8 +46,9 @@ export default function Reviews() {
         </motion.div>
 
         {/* Slider */}
-        <div style={{ position: 'relative', overflow: 'hidden'  }}>
-          <AnimatePresence custom={dir} mode="wait">
+        <div style={{ position: 'relative'}}>
+          <div style={{ overflow: 'hidden', borderRadius: 24 }}>
+              <AnimatePresence custom={dir} mode="wait">
             <motion.div
               key={cur}
               custom={dir}
@@ -103,10 +104,10 @@ export default function Reviews() {
                 <div style={{ fontSize: 12, color: 'var(--gray-light)' }}>{t.date}</div>
               </div>
             </motion.div>
-          </AnimatePresence>
+            </AnimatePresence>
 
-          {/* Nav buttons */}
-          {['left', 'right'].map(side => (
+            {/* Nav buttons */}
+            {['left', 'right'].map(side => (
             <button key={side}
               onClick={() => go(side === 'left' ? -1 : 1)}
               style={{
@@ -121,7 +122,9 @@ export default function Reviews() {
             >
               {side === 'left' ? <BsChevronLeft /> : <BsChevronRight />}
             </button>
-          ))}
+            ))}
+          </div>
+          
         </div>
 
         {/* Dots */}
