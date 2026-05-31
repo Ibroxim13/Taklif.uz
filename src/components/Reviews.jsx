@@ -46,7 +46,7 @@ export default function Reviews() {
         </motion.div>
 
         {/* Slider */}
-        <div style={{ position: 'relative' }}>
+        <div style={{ position: 'relative', overflow: 'hidden'  }}>
           <AnimatePresence custom={dir} mode="wait">
             <motion.div
               key={cur}
