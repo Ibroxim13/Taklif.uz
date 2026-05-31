@@ -142,7 +142,8 @@ export default function Hero() {
         transition={{ repeat: Infinity, duration: 2 }}
         onClick={scrollDown}
         style={{
-          position: 'absolute', bottom: 24, left: '50%', transform: 'translateX(-50%)',
+          position: 'absolute', bottom: 24, left: 0, right: 0, margin: '0 auto',
+          width: 'fit-content',
           background: 'none', border: 'none', cursor: 'pointer',
           display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 4
         }}
