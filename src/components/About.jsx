@@ -35,7 +35,7 @@ export default function About() {
             initial={{ opacity: 0, x: -30 }}
             animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.65 }}
-            style={{ position: 'relative' }}
+            style={{ position: 'relative', paddingBottom: 30, paddingRight: 16 }}
           >
             {/* Main */}
             <div style={{
@@ -69,7 +69,7 @@ export default function About() {
             <motion.div
               animate={{ y: [0, -8, 0] }} transition={{ duration: 4, repeat: Infinity }}
               style={{
-                position: 'absolute', bottom: -20, right: -16,
+                position: 'absolute', bottom: -20, right: 0,
                 background: 'white', borderRadius: 16, padding: '14px 20px',
                 boxShadow: '0 8px 30px rgba(201,84,124,0.15)',
                 border: '1px solid rgba(201,84,124,0.1)'
@@ -85,7 +85,7 @@ export default function About() {
             <motion.div
               animate={{ y: [0, 8, 0] }} transition={{ duration: 3.5, repeat: Infinity, delay: 0.6 }}
               style={{
-                position: 'absolute', top: -16, left: -16,
+                position: 'absolute', top: -16, left: 0,
                 background: 'white', borderRadius: 16, padding: '10px 16px',
                 boxShadow: '0 8px 24px rgba(201,168,76,0.15)',
                 border: '1px solid rgba(201,168,76,0.2)',
